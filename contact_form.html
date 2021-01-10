@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+    <div class=" bg-black pb-5 font-poppins text-gray-100  ">
+
+        <!-- section title -->
+        <div class=" flex justify-center text-3xl lg:text-6xl text-center uppercase py-6">
+            <h2 class="text-gray-100 border-gray-200 px-4  border-r-2 border-l-2 md:border-r-8 md:border-l-8 md:px-5 md:py-4 ">Get In <span class="text-red-600 ">Touch</span></h2>
+            
+        </div>
+        <!-- /section title -->
+
+        <div class="grid md:grid-cols-2 text-sm ">
+            <!-- Contact Details -->
+            <div class=" px-8 py-8 md:pl-28 md:py-28">
+
+                <h3 class="text-base lg:text-3xl pb-4 md:pb-5 ">Contact Details</h3>
+                <p class=" pb-6 md:pt-2 md:pb-10 text-xs md:text-base">Vssut Robotics,a Confluence Of Innovative Minds,where problem solving &
+                    innovation are their only
+                    instinct. </p>
+
+
+
+                <div class="text-xs md:text-base">
+                    <div class=" py-3 md:py-4">
+                        <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span class="p-2">Room no. A-101, VSSUT ROBOTICS SOCIETY,Burla, Sambalpur</span>
+                    </div>
+
+                    <div class="py-3 md:py-4">
+                        <svg class="w-4 inline-block " xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 3l-6 6m0 0V4m0 5h5M5 3a2 2 0 00-2 2v1c0 8.284 6.716 15 15 15h1a2 2 0 002-2v-3.28a1 1 0 00-.684-.948l-4.493-1.498a1 1 0 00-1.21.502l-1.13 2.257a11.042 11.042 0 01-5.516-5.517l2.257-1.128a1 1 0 00.502-1.21L9.228 3.683A1 1 0 008.279 3H5z" />
+                        </svg>
+                        <span class="px-3">Phone: +91-94378-49269</span>
+                    </div>
+
+                    <!--<div class="con-info clearfix">
+                            <i class="fa fa-fax fa-lg"></i>
+                            <span>Fax: +880-31-000-000</span>
+                        </div>-->
+
+                    <div class="py-3 md:py-4">
+                        <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <span class="pb-8 border-b-4 border-red-700 md:border-b-0">Email: secretary.roboticsvssut@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <!-- / End Contact Details -->
+
+            <!-- Contact Form -->
+            <div class="pl-6 md:mt-9 text-sm md:text-base md:border-t-0 md:border-l-4 border-red-800" >
+                <form id="contact-form" method="post" action="sendmail.php" role="form">
+
+                    <div class="md:px-40 py-2 ">
+                        <label for="name">Name:</label>
+                        <input class="form_group" type="text" placeholder="Your Name" name="name" id="name">
+                    </div>
+
+                    <div class="md:px-40 pb-2 md:py-3">
+                        <label for="email">Email:</label>
+                        <input class="form_group" type="email" placeholder="Your Email" name="email" id="email">
+                    </div>
+
+                    <div class="md:px-40 pb-2 md:py-3">
+                        <label for="phone">Phone Number:</label>
+                        <input class="form_group" type="number" placeholder="Phone number" name="phone" id="phone">
+                    </div>
+
+                    <div class="md:px-40 pb-2 md:py-3">
+                        <label for="subject">Subject:</label>
+                        <input class="form_group" type="text" placeholder="Subject" name="subject" id="subject">
+                    </div>
+
+                    <div class="md:px-40 pb-2 md:pt-3 md:pb-4">
+                        <label for="message">Message:</label><br>
+                        <textarea class="form_group" rows="6" placeholder="Message" name="message"
+                            id="message"></textarea>
+                    </div>
+
+                    <!-- <div id="mail-success" class="success">
+                            Thank you. The Mailman is on His Way :)
+                        </div>
+
+                        <div id="mail-fail" class="error">
+                            Thank you. The Mailman is on His Way
+                        </div> -->
+
+                    <div id="cf-submit" class="pl-64 md:px-40 ">
+                        <input type="submit" id="contact-submit"
+                            class="px-1 py-1 md:px-0 md:py-3 md:w-11/12 rounded-lg bg-transparent cursor-pointer border-white border-2 hover:text-gray-100  hover:bg-red-700  hover:border-red-700 font-block"
+                            value="Submit">
+                    </div>
+
+                </form>
+            </div>
+            <!-- ./End Contact Form -->
+        </div>
+    </div> 
+    
+
+</body>
+
+</html>

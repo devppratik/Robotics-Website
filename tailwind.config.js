@@ -3,23 +3,14 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
-
-      fontFamily: {
+      
+      fontFamily:{
         poppins: ['Poppins']
-      },
-
-      inset: {
-
-        'val': 'calc(100% - 4px)'
-      },
+      }
     },
   },
-    variants: {
-      extend: { 
-        
-        inset: ['hover', 'focus'],
-      },
-    },
-    plugins: [],
-
+  variants: {
+    extend: {},
+  },
+  plugins: [],
 }
